@@ -1,0 +1,21 @@
+public class DivideEvenly2 {
+    public static void main(String[] args) {
+        final int LIMIT = 50;
+        int number, div;
+
+        // Loop through each divisor from 1 to 10
+        for (div = 1; div <= 10; div++) {
+            System.out.print(LIMIT + " is evenly divisible by " + div + ": ");
+            
+            // Check every number from 1 to LIMIT
+            for (number = 1; number <= LIMIT; number++) {
+                if (number % div == 0) {
+                    System.out.print(number + "  ");
+                }
+            }
+            System.out.println(); // Move to next line
+        }
+        
+        System.out.println("GOOD PROGRAMMING, STUDENT! ");
+    }
+}
