@@ -1,0 +1,30 @@
+import javax.swing.JOptionPane;
+
+public class Main {
+    public static void main(String[] args) {
+
+        int data;
+        int sum = 0;
+
+        do {
+            String dataString = JOptionPane.showInputDialog(
+                null,
+                "Enter an int value. The program exits if the value is 0.",
+                "TestDo",
+                JOptionPane.QUESTION_MESSAGE
+            );
+
+            data = Integer.parseInt(dataString);
+            sum += data;
+
+        } while (data != 0);
+
+        JOptionPane.showMessageDialog(
+            null,
+            "The sum is " + sum,
+            "TestDo",
+            JOptionPane.INFORMATION_MESSAGE
+        );
+    }
+}
+Gian
